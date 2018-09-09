@@ -1,0 +1,33 @@
+/* .grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+} */
+
+
+.avtaar{
+  background-image: linear-gradient(to left bottom,#4779da, #707abb);
+  height: 36px;
+  width: 36px;
+  border-radius: 30px;
+  margin-right: 8px;
+}
+.icons{
+  color: white;
+}

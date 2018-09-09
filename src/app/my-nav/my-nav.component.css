@@ -1,0 +1,79 @@
+.sidenav-container {
+  height: 100%;
+ 
+}
+
+.sidenav {
+  width: 190px;
+  background-color: #252934;
+  overflow: hidden;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  height: 25px;
+}
+.sidenav-header{
+  background-color: #252934;
+  color:white;
+  display: flex;
+  /* text-align: center; */
+  justify-content: center;
+  height: 82px;
+  font-family: 'Open Sans';
+}
+.list-name{
+  display: flex;
+  align-items: center;
+  color: #9ca4ab;
+  font-family: Open Sans;
+   font-size: 12px;
+   line-height: 17px;
+}
+.sidenav-icon{
+  padding: 14px;
+  color: #ababb4;
+}
+.content{
+  border: 1px solid #212530;
+  height: 50px;
+  justify-content: center;
+}
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.common-toolbar{
+  display: flex;
+  width: 200px;
+}
+/* .side-header{
+
+} */
+.profile{
+  background: gray;
+  height: 36px;
+  width: 36px;
+  border-radius: 30px;
+  margin-right: 8px;
+}
+.profile-name{
+  font-size: 10px;
+    margin-right: 10px;
+    padding-top: 3px;
+    font-family: Open sans-serif;
+}
+.toolbar-icon{
+  
+  margin-right: 8px;
+  padding-top: 11px;
+  /* size: 13px; */
+  font-size: 17px;
+}
+.dashboard-name{
+  font-size: 16px;
+  font-family: Open sans-serif;
+}

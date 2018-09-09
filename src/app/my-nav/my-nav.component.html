@@ -1,0 +1,134 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer fixedTopGap="8" class="sidenav" fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+        <mat-toolbar class="sidenav-header">Tu Market</mat-toolbar>
+        <mat-nav-list>
+            <div class="content">
+                <a class="nav-list" style="display:block" routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Dashboard</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="content">
+                <a class="nav-list" style="display:block"  routerLinkActive="active">
+
+
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Catalog</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" >
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>                        <span>Manage Sales Agent</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Order Management</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>                        <span>Transaction History</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Offers/Discounts</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Commission</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Inventory History</span>
+                    </div>
+                </a>
+            </div>
+            <div class="content">
+                <a class="nav-list" style="display:block" href="">
+
+
+                    <div class="list-name">
+                        <mat-icon class="sidenav-icon">
+                            calendar_view_day
+                        </mat-icon>
+                        <span>Invite a Friend</span>
+                    </div>
+                </a>
+            </div>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar class="side-header">
+            <!-- <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+       -->
+            <div class="toolbar">
+                <div class="dashboard-name">
+                    Dashboard
+                </div>
+                <div class="common-toolbar">
+                    <div class="profile"></div>
+                    <div class="profile-name"> Profile name</div>
+                    <div><mat-icon class="toolbar-icon" >
+                        settings
+                    </mat-icon></div>
+                    <div>
+                        <mat-icon class="toolbar-icon">
+                            power_settings_new
+                        </mat-icon>
+                    </div>
+                </div>
+            </div>
+        </mat-toolbar>
+        <router-outlet></router-outlet>
+        <!-- Add Content Here -->
+    </mat-sidenav-content>
+</mat-sidenav-container>
